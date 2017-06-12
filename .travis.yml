@@ -1,5 +1,18 @@
 language: node_js
+sudo: true
 dist: trusty
 
 node_js:
-  - '7.10.0'
+  - '7'
+
+branches:
+  only:
+  - master
+
+before_install:
+ - export CHROME_BIN=/usr/bin/chromium-browser
+ - export DISPLAY=:99.0
+ - sh -e /etc/init.d/xvfb start
+ - sudo apt-get update
+ - sudo apt-get install -y libappindicator1 fonts-liberation
+ - sudo apt-get install chromium-browser
