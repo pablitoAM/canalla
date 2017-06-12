@@ -1,5 +1,7 @@
 # Canalla
 
+[![Build Status](https://travis-ci.org/pablitoAM/canalla.svg?branch=master)](https://travis-ci.org/pablitoAM/canalla)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.1.
 
 ## Development server
