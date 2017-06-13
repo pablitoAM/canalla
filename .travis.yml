@@ -9,6 +9,10 @@ branches:
   only:
   - master
 
+script:
+  - npm run build
+  - npm run test
+
 before_install:
  - export CHROME_BIN=/usr/bin/chromium-browser
  - export DISPLAY=:99.0
