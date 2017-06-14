@@ -19,10 +19,11 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css",
-        "../node_modules/materialize-css/dist/css/materialize.min.css"
+        "../node_modules/materialize-css/dist/css/materialize.min.css",
+        "styles.scss"
       ],
       "scripts": [
+        "../node_modules/jquery/dist/jquery.min.js",
         "../node_modules/materialize-css/dist/js/materialize.min.js"
       ],
       "environmentSource": "environments/environment.ts",
@@ -54,7 +55,10 @@
     }
   },
   "defaults": {
-    "styleExt": "css",
-    "component": {}
-  }
+        "styleExt": "scss",
+        "component": {
+            "inlineTemplate": false,
+            "spec": true
+        }
+    }
 }
