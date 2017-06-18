@@ -6,11 +6,13 @@ import { MapComponent } from './components/map/map.component';
 import { LoginComponent } from './components/login/login.component';
 import { TabsComponent } from './components/tabs/tabs.component';
 import { AgmCoreModule } from '@agm/core';
+import { TabsContainerComponent } from './components/tabs-container/tabs-container.component';
+import { TabComponent } from './components/tab/tab.component';
 
 @NgModule({
   declarations: [
     AppComponent,    
-    MapComponent, LoginComponent, TabsComponent
+    MapComponent, LoginComponent, TabsComponent, TabsContainerComponent, TabComponent
   ],
   imports: [
     BrowserModule,
